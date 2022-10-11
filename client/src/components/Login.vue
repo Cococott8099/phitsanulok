@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="center">
     <h1>เข้าสู่ระบบ </h1>
     <form v-on:submit.prevent="onLogin">
       <p>ชื่อผู้ใช้ : <input type="text" v-model="email" /></p>
@@ -49,4 +49,10 @@ export default {
   .error{
     color:red;
   }
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
 </style>
